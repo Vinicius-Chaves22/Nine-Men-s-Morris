@@ -1,0 +1,136 @@
+:root {
+    --A: #E7CFB4;
+    --B: #987e61;
+    --C: #F3EBE6;
+    --D: #292929;
+    --E: #F2F2F2;
+    --F: #7288F3;
+    --G: #F05467;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: var(--D);
+}
+.container{
+    display: flex;
+}
+
+
+
+
+
+.cronometro-btn{
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+.tabuleiro{
+    width: 40%;
+    display: grid;
+    border: var(--A) solid 20px;
+    border-radius: 4%;
+    margin-left: 25%;
+    height: 40%;
+    margin-top: 2%;
+}
+.inner-tabuleiro{
+    background-color: var(--B);
+}
+.coluna{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-radius: 20px;
+   background: transparent;
+}
+
+.casa{
+   display: flex;
+   margin: 20px;
+   border-radius: 50%;
+   height: 30px;
+   width: 30px;
+   cursor: pointer;
+   position: relative;
+   background: blue;
+}
+
+#col-a{
+    border: var(--B);
+    background: var(--E);
+    height: 0.5rem; 
+    margin: 1.5rem 2rem 3.5rem 2rem
+}
+#a1{margin-left: -1rem;}
+#a7{margin-right: -1rem;}
+
+#col-b{margin-top: 0.5  rem;
+    border: var(--B);
+    background: var(--E);
+    height: 0.5rem; 
+    margin: 1.5rem 2rem 1.5rem 2rem}
+#b2{margin-left: 14%;}
+#b6{margin-right: 14%;}
+
+#col-c{
+    border: var(--B);
+    background: var(--E);
+    height: 0.5rem; 
+    margin: 3.5rem 7rem 3.5rem 7rem}
+#c3{margin-left: 14%;}
+#c5{margin-right: 14%;}
+
+
+#col-e{margin-top: 1rem;
+    border: var(--B);
+    background: var(--E);
+    height: 0.5rem; 
+    margin: 3.5rem 7rem 3.5rem 7rem}
+#e3{margin-left: 14%;}
+#e5{margin-right: 14%;}
+
+#col-f{margin-top: 0.5rem;
+    border: var(--B);
+    background: var(--E);
+    height: 0.5rem; 
+    margin: 1.5rem 2rem 1.5rem 2rem}
+#f2{margin-left: 14%;}
+#f6{margin-right: 14%;}
+
+#col-g{
+    border: var(--B);
+    background: var(--E);
+    height: 0.5rem; 
+    margin: 3.5rem 2rem 1.5rem 2rem
+}
+#g1{margin-left: -1rem;}
+#g7{margin-right: -1rem;}
+
+.peca,
+.peca_branca,
+.peca_preta{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: -0.3rem;
+}
+
+.peca_branca{
+    background: #fff;
+}
+
+.peca_preta{
+    background: rgba(0, 0, 0, 1);
+}
